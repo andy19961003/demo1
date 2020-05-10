@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #demo {
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .one {
+            width: 50%;
+            height: 100%;
+            background-color: white;
+
+        }
+
+        .two {
+            width: 50%;
+            height: 100%;
+            background-color: black;
+            position: absolute;
+            left: 50%;
+            top: 0%;
+        }
+
+        .thr {
+            width: 300px;
+            height: 300px;
+            /* border: 1px solid blue; */
+            position: absolute;
+            top: 0%;
+            left: 20%;
+            border-radius: 50% 50% 50% 50%;
+            background-color: white;
+        }
+
+        .for {
+            width: 300px;
+            height: 310px;
+            /* border: 1px solid blue; */
+            position: absolute;
+            top: 49%;
+            left: 30%;
+            border-top-left-radius: 50%;
+            border-bottom-left-radius: 40%;
+            background-color: black;
+        }
+
+        .y1 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: black;
+            position: absolute;
+            top: 20%;
+            left: 40%;
+        }
+
+        .y2 {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: white;
+            position: absolute;
+            bottom: 20%;
+            right: 40%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 做出一个圆  然后平均分2半 在创建一个盒子放右上 利用做圆的属性调整右上和右下的角度 同理 创建一个盒子放左下 调整左上和左下的角度 利用到绝对定位 -->
+    <div id="demo">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="thr"></div>
+        <div class="for"></div>
+        <div class="y1"></div>
+        <div class="y2"></div>
+    </div>
+</body>
+
+</html>
